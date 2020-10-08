@@ -113,7 +113,7 @@ function createLogger (app, service) {
   return logger
 }
 
-const { info, debug } = createLogger('logger', 'log')
+const { info, debug } = createLogger('meilog', 'log')
 info(`environment: ${NODE_ENV}`)
 debug(`log level: ${LOG_LEVEL}`)
 
