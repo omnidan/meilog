@@ -15,9 +15,12 @@
     "start:dev": "cross-env LOG_LEVEL=debug node src/index.js",
     "start:prod": "cross-env NODE_ENV=production node src/index.js",
     "start:prod:nojson": "cross-env NODE_ENV=production LOG_DISABLE_JSON=true node src/index.js",
-    "demo": "cross-env LOG_LEVEL=debug node test/demo.js"
+    "demo": "cross-env LOG_LEVEL=debug node test/demo.js",
+    "lint": "standard",
+    "test": "npm run lint && npm run demo"
   },
   "devDependencies": {
-    "cross-env": "^7.0.2"
+    "cross-env": "^7.0.2",
+    "standard": "^14.3.4"
   }
 }
