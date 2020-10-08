@@ -1,6 +1,6 @@
 const createLogger = require('../src/index')
 
-const { d, debug, info, warn, error, crit, exception } = createLogger('logger', 'demo')
+const { d, debug, info, warn, error, crit, exception } = createLogger('meilog', 'demo')
 
 debug('Debug or trace information.')
 info('Routine information, such as ongoing status or performance.')
