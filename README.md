@@ -2,6 +2,8 @@
 
 _beautiful logging library with support for structured logs (for cloud services) and local logging with colors_
 
+![meilog `yarn demo` screenshot](https://github.com/omnidan/meilog/blob/demo-image/meilog-demo.png?raw=true)
+
 
 ## Motivation
 
