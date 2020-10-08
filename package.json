@@ -1,0 +1,22 @@
+{
+  "name": "meilog",
+  "version": "1.0.0",
+  "description": "📃 beautiful logging library with support for structured logs (for cloud services) and local logging with colors",
+  "main": "src/index.js",
+  "repository": "https://github.com/omnidan/meilog",
+  "author": "Daniel Bugl <me@omnidan.net>",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "winston": "^3.2.1"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "start:dev": "cross-env LOG_LEVEL=debug node src/index.js",
+    "start:prod": "cross-env NODE_ENV=production node src/index.js",
+    "start:prod:nojson": "cross-env NODE_ENV=production LOG_DISABLE_JSON=true node src/index.js"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2"
+  }
+}
